@@ -41,7 +41,7 @@ task:
       workingDir: /workspace/gitops-git
       args:
       - -git-revision=$(context.git.commit)
-      - -substitute=imageName=<your github user>/helloworld@$(inputs.resources.docker-image.digest)
+      - -substitute=imageName=peaceypea/helloworld@$(inputs.resources.docker-image.digest)
       - -scm-provider=github
 
 actions:
